@@ -156,6 +156,18 @@ select {
   background: rgba(255, 255, 255, 0.06);
 }
 
+.btn-outline-dark {
+  border-color: rgba(8, 8, 8, 0.18);
+  color: var(--black);
+  background: var(--white);
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:focus-visible {
+  border-color: rgba(154, 108, 29, 0.52);
+  background: #f7f4ee;
+}
+
 .btn-small {
   min-height: 42px;
   padding: 0 16px;
@@ -221,6 +233,7 @@ select {
 .split > *,
 .content-grid > *,
 .pricing-grid > *,
+.order-grid > *,
 .faq-grid > * {
   min-width: 0;
 }
@@ -618,6 +631,139 @@ h3 {
   color: var(--muted);
 }
 
+.price-card .btn + .btn {
+  margin-top: 12px;
+}
+
+.order-section {
+  background:
+    linear-gradient(135deg, rgba(242, 216, 140, 0.12), transparent 38%),
+    linear-gradient(180deg, #050505 0%, #111111 100%);
+}
+
+.order-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.order-copy {
+  position: sticky;
+  top: 108px;
+}
+
+.order-copy p {
+  max-width: 610px;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.order-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.order-points span {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  padding: 0 13px;
+  border: 1px solid rgba(242, 216, 140, 0.28);
+  border-radius: 999px;
+  color: var(--gold-light);
+  background: rgba(255, 255, 255, 0.055);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.order-form {
+  padding: 32px;
+  border: 1px solid rgba(242, 216, 140, 0.42);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.form-heading {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.form-heading span {
+  color: var(--gold-dark);
+  font-size: 0.86rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.form-heading strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  line-height: 1.08;
+}
+
+.form-fields {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.form-field {
+  display: grid;
+  gap: 8px;
+}
+
+.form-field label {
+  color: #25211b;
+  font-size: 0.94rem;
+  font-weight: 900;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  border: 1px solid rgba(8, 8, 8, 0.14);
+  border-radius: 6px;
+  background: #fbfaf7;
+  color: var(--ink);
+  outline: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.form-field input,
+.form-field select {
+  min-height: 52px;
+  padding: 0 14px;
+}
+
+.form-field textarea {
+  min-height: 120px;
+  padding: 14px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: rgba(154, 108, 29, 0.68);
+  background: var(--white);
+  box-shadow: 0 0 0 4px rgba(214, 170, 72, 0.16);
+}
+
+.form-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .testimonial-card {
   margin: 0;
   border-color: var(--line-dark);
@@ -750,6 +896,7 @@ h3 {
   .split,
   .content-grid,
   .pricing-grid,
+  .order-grid,
   .faq-grid {
     grid-template-columns: 1fr;
     gap: 44px;
@@ -767,6 +914,10 @@ h3 {
 
   .pricing-grid {
     align-items: start;
+  }
+
+  .order-copy {
+    position: static;
   }
 }
 
@@ -898,8 +1049,17 @@ h3 {
   }
 
   .toc-panel,
-  .price-card {
+  .price-card,
+  .order-form {
     padding: 18px;
+  }
+
+  .order-points {
+    display: grid;
+  }
+
+  .order-points span {
+    justify-content: center;
   }
 
   .toc-list li {

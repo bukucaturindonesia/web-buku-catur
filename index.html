@@ -21,16 +21,14 @@
         <a href="#sinopsis">Sinopsis</a>
         <a href="#manfaat">Manfaat</a>
         <a href="#daftar-isi">Daftar Isi</a>
+        <a href="#order">Order</a>
         <a href="#faq">FAQ</a>
       </nav>
 
       <a
         class="btn btn-small"
-        data-whatsapp
         aria-label="Beli ebook via WhatsApp"
-        href="https://wa.me/6281142211188?text=Halo%20kak%2C%20saya%20mau%20beli%20ebook%2064%20Kotak%20Kehidupan"
-        target="_blank"
-        rel="noopener"
+        href="#order"
       >
         <span class="wa-icon" aria-hidden="true">WA</span>
         Beli
@@ -54,13 +52,18 @@
             <div class="hero-actions">
               <a
                 class="btn btn-primary"
-                data-whatsapp
-                href="https://wa.me/6281142211188?text=Halo%20kak%2C%20saya%20mau%20beli%20ebook%2064%20Kotak%20Kehidupan"
+                href="#order"
+              >
+                <span class="wa-icon" aria-hidden="true">WA</span>
+                Order via WhatsApp
+              </a>
+              <a
+                class="btn btn-ghost"
+                href="sampel-64-kotak-kehidupan.pdf"
                 target="_blank"
                 rel="noopener"
               >
-                <span class="wa-icon" aria-hidden="true">WA</span>
-                Beli via WhatsApp
+                Baca Sampel Gratis
               </a>
               <a class="btn btn-ghost" href="#harga">Lihat Promo</a>
             </div>
@@ -207,15 +210,102 @@
             <p class="price-note">Format PDF ebook, dikirim melalui WhatsApp setelah pemesanan.</p>
             <a
               class="btn btn-primary btn-full"
-              data-whatsapp
-              href="https://wa.me/6281142211188?text=Halo%20kak%2C%20saya%20mau%20beli%20ebook%2064%20Kotak%20Kehidupan"
-              target="_blank"
-              rel="noopener"
+              href="#order"
             >
               <span class="wa-icon" aria-hidden="true">WA</span>
               Pesan Sekarang
             </a>
+            <a
+              class="btn btn-outline-dark btn-full"
+              href="sampel-64-kotak-kehidupan.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              Baca Sampel Gratis
+            </a>
           </div>
+        </div>
+      </section>
+
+      <section class="section-band order-section" id="order">
+        <div class="container order-grid">
+          <div class="order-copy">
+            <p class="eyebrow">Form Order</p>
+            <h2>Isi detail pesanan, lalu lanjutkan ke WhatsApp.</h2>
+            <p>
+              Pesan akan otomatis tersusun dari isian Anda, sehingga proses
+              pemesanan lebih cepat dan tetap terasa personal.
+            </p>
+            <div class="order-points" aria-label="Keunggulan pemesanan">
+              <span>Tanpa backend</span>
+              <span>Tanpa database</span>
+              <span>Langsung ke WhatsApp</span>
+            </div>
+          </div>
+
+          <form class="order-form" id="orderForm">
+            <div class="form-heading">
+              <span>Pemesanan Ebook</span>
+              <strong>64 Kotak Kehidupan</strong>
+            </div>
+
+            <div class="form-fields">
+              <div class="form-field">
+                <label for="orderName">Nama</label>
+                <input
+                  id="orderName"
+                  name="nama"
+                  type="text"
+                  placeholder="Nama lengkap"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="orderEmail">Email</label>
+                <input
+                  id="orderEmail"
+                  name="email"
+                  type="email"
+                  placeholder="nama@email.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="orderPackage">Paket</label>
+                <select id="orderPackage" name="paket" required>
+                  <option value="" selected disabled>Pilih paket</option>
+                  <option value="Ebook PDF - Promo Rp49.000">
+                    Ebook PDF - Promo Rp49.000
+                  </option>
+                  <option value="Ebook PDF + tanya detail pembayaran">
+                    Ebook PDF + tanya detail pembayaran
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="orderNotes">Catatan</label>
+                <textarea
+                  id="orderNotes"
+                  name="catatan"
+                  rows="4"
+                  placeholder="Contoh: Saya ingin dikirim ke email ini setelah pembayaran."
+                ></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-full" type="submit">
+              <span class="wa-icon" aria-hidden="true">WA</span>
+              Order via WhatsApp
+            </button>
+            <p class="form-note">
+              Tombol ini akan membuka WhatsApp dengan pesan order otomatis.
+            </p>
+          </form>
         </div>
       </section>
 
@@ -305,13 +395,10 @@
           </div>
           <a
             class="btn btn-primary"
-            data-whatsapp
-            href="https://wa.me/6281142211188?text=Halo%20kak%2C%20saya%20mau%20beli%20ebook%2064%20Kotak%20Kehidupan"
-            target="_blank"
-            rel="noopener"
+            href="#order"
           >
             <span class="wa-icon" aria-hidden="true">WA</span>
-            Chat WhatsApp
+            Order via WhatsApp
           </a>
         </div>
       </section>
