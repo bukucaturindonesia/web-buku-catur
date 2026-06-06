@@ -4,11 +4,6 @@ Website landing page statis untuk menjual ebook **64 Kotak Kehidupan** dengan su
 
 ## File
 
-- `index.html`
-- `style.css`
-- `script.js`
-- `README.md`
-
 ## Cara Membuka
 
 1. Buka file `index.html` langsung di browser.
